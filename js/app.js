@@ -163,4 +163,19 @@ for (let i=0; i<bondFilms.length;i++) {
         newArr.push(bondFilms[i].year)
     }
 }
-console.log(newArr);
+// console.log(newArr);
+
+
+// Determine the total cumulative gross of the Bond franchise, and console.log the result.
+
+// NEED HELP!!!!
+
+let result = 0;
+for (let i=0; i<bondFilms.length; i++) {
+   result += Number(bondFilms[i].gross.replace(/[,$]/g,""))
+}
+console.log(result);
+
+
+
+
